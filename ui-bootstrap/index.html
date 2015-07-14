@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ui bootstrap</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+
+    <script type="application/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="application/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script type="application/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script type="application/javascript" src="app.js"></script>
+
+    <script type="application/javascript" src="components/accordion/accordion.controller.js"></script>
+    <script type="application/javascript" src="components/alert/alert.controller.js"></script>
+    <script type="application/javascript" src="components/button/button.controller.js"></script>
+
+    <script type="application/javascript" src="components/scroll.controller.js"></script>
+</head>
+<body>
+<div class="container" ng-app="app" ng-strict-di>
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Ui Bootstrap</h1>
+            <h4><a href="http://angular-ui.github.io/bootstrap/">Link</a></h4>
+        </div>
+    </div>
+    <div class="row">
+        <ng-include src="'components/accordion/accordion.template.html'"></ng-include>
+    </div>
+    <div class="row">
+        <ng-include src="'components/alert/alert.template.html'"></ng-include>
+    </div>
+    <div class="row">
+        <ng-include src="'components/button/button.template.html'"></ng-include>
+    </div>
+    <div ng-controller="ScrollController"></div>
+</div>
+</body>
+</html>

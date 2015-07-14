@@ -1,0 +1,36 @@
+<div ng-controller="AccordionController as accordion">
+    <div class="col-md-3">
+        <h3 id="accordion">Accordion</h3>
+    </div>
+    <div class="col-md-9">
+        <div class="form-inline well-sm">
+            <button class="btn btn-default btn-sm" ng-click="accordion.status.open = !accordion.status.open">Toggle last panel</button>
+            <button class="btn btn-default btn-sm" ng-click="accordion.status.isFirstDisabled = ! accordion.status.isFirstDisabled">Enable / Disable first panel</button>
+            <label class="checkbox">
+                <input type="checkbox" ng-model="accordion.oneAtATime">
+                Open only one at a time
+            </label>
+        </div>
+
+        <accordion close-others="accordion.oneAtATime">
+            <accordion-group heading="Static Header, initially expanded" is-open="accordion.status.isFirstOpen" is-disabled="accordion.status.isFirstDisabled">
+                This content is straight in the template.
+            </accordion-group>
+            <accordion-group heading="{{group.title}}" ng-repeat="group in accordion.groups">
+                {{group.content}}
+            </accordion-group>
+            <accordion-group heading="Dynamic Body Content">
+                <p>The body of the accordion group grows to fit the contents</p>
+                <button class="btn btn-default btn-sm" ng-click="accordion.addItem()">Add Item</button>
+                <div ng-repeat="item in accordion.items">{{item}}</div>
+            </accordion-group>
+            <accordion-group is-open="accordion.status.open">
+                <accordion-heading>
+                    I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': accordion.status.open, 'glyphicon-chevron-right': !accordion.status.open}"></i>
+                </accordion-heading>
+                This is just some content to illustrate fancy headings.
+            </accordion-group>
+        </accordion>
+    </div>
+
+</div>
