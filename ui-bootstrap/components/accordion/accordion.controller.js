@@ -5,11 +5,11 @@
     'use strict';
     angular
         .module('app')
-        .controller('AccordionController', AccordionController);
+        .controller('AccordionCtrl', AccordionCtrl);
 
-    AccordionController.$inject = ['$scope'];
+    AccordionCtrl.$inject = ['$scope'];
 
-    function AccordionController($scope) {
+    function AccordionCtrl($scope) {
         var vm = this;
         vm.oneAtATime = true;
 
@@ -25,18 +25,14 @@
             {
                 title: 'Dynamic Group Header - 3',
                 content: 'Dynamic Group Body - 3'
-            },
-            {
-                title: 'Dynamic Group Header - 4',
-                content: 'Dynamic Group Body - 4'
             }
         ];
 
         vm.items = ['Item 1', 'Item 2', 'Item 3'];
 
         vm.addItem = function() {
-            var newItemNo = $scope.items.length + 1;
-            $scope.items.push('Item ' + newItemNo);
+            var newItemNo = vm.items.length + 1;
+            vm.items.push('Item ' + newItemNo);
         };
 
         vm.status = {

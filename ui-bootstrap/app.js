@@ -3,4 +3,15 @@
  */
 
 
-angular.module('app', ['ui.bootstrap']);
+angular
+    .module('app', ['ui.bootstrap'])
+    .config(AppConfig);
+
+AppConfig.$inject= ['$locationProvider'];
+
+function AppConfig ($locationProvider) {
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
+}

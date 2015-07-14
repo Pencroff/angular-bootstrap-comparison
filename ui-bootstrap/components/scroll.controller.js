@@ -6,13 +6,11 @@
     angular
         .module('app')
         .controller('ScrollController', ScrollController);
-    ScrollController.$inject=['$anchorScroll', '$location', '$timeout'];
+    ScrollController.$inject=['$anchorScroll', '$timeout'];
 
-    function ScrollController($anchorScroll, $location, $timeout) {
+    function ScrollController($anchorScroll, $timeout) {
         $timeout(function() {
-            var hash = $location.hash();
-            console.log(hash, $location);
-            $anchorScroll(hash);
-        }, 1500);
+            $anchorScroll();
+        }, 250);
     }
 })(angular);

@@ -5,11 +5,11 @@
     'use strict';
     angular
         .module('app')
-        .controller('AlertController', AlertController);
+        .controller('AlertCtrl', AlertCtrl);
 
-    AlertController.$inject = ['$scope'];
+    AlertCtrl.$inject = ['$scope'];
 
-    function AlertController($scope) {
+    function AlertCtrl($scope) {
         var vm = this;
         vm.alerts = [
             { type: 'danger', msg: 'Oh snap! Change a few things up and try submitting again.' },

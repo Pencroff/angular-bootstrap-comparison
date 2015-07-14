@@ -5,11 +5,11 @@
     'use strict';
     angular
         .module('app')
-        .controller('ButtonController', ButtonController);
+        .controller('ButtonCtrl', ButtonCtrl);
 
-    ButtonController.$inject = ['$scope'];
+    ButtonCtrl.$inject = ['$scope'];
 
-    function ButtonController($scope) {
+    function ButtonCtrl($scope) {
         var vm = this;
         vm.singleModel = 1;
 
