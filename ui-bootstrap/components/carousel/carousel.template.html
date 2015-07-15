@@ -1,0 +1,28 @@
+<div ng-controller="CarouselCtrl as carouselCtrl">
+    <div class="col-md-3">
+        <h3 id="carousel">Carousel</h3>
+        <p><a href="https://github.com/angular-ui/bootstrap/tree/master/src/carousel">ui.bootstrap.carousel</a></p>
+    </div>
+    <div class="col-md-9">
+        <div style="height: 305px">
+            <carousel interval="carouselCtrl.myInterval">
+                <slide ng-repeat="slide in carouselCtrl.slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <h4>Slide {{$index}}</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-info" ng-click="carouselCtrl.addSlide()">Add Slide</button>
+            </div>
+            <div class="col-md-6">
+                Interval, in milliseconds: <input type="number" class="form-control" ng-model="carouselCtrl.myInterval">
+                <br />Enter a negative number or 0 to stop the interval.
+            </div>
+        </div>
+    </div>
+</div>

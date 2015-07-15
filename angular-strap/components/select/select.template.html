@@ -1,0 +1,27 @@
+<div ng-controller="SelectCtrl">
+    <div class="col-md-3">
+        <h3 id="select">Selects</h3>
+        <p><a href="http://mgcrea.github.io/angular-strap/#/selects">mgcrea.ngStrap.select</a></p>
+        <h5>Dependencies:</h5>
+        <ul>
+            <li><code>mgcrea.ngStrap.tooltip</code></li>
+            <li><code>mgcrea.ngStrap.helpers.parseOptions</code></li>
+        </ul>
+    </div>
+    <div class="col-md-9">
+        <pre class="bs-example-scope">$scope.selectedIcon = "{{selectedIcon}}";
+$scope.selectedIcons = "{{selectedIcons}}";
+$scope.icons = "{{icons}}";
+</pre>
+        <label>Single select:&nbsp;</label>
+        <button type="button" class="btn btn-default" ng-model="selectedIcon" data-html="1" bs-options="icon.value as icon.label for icon in icons" bs-select>
+            Action <span class="caret"></span>
+        </button>
+        <hr>
+        <label>Multiple select:&nbsp;</label>
+        <button type="button" class="btn btn-default" ng-model="selectedIcons" data-html="1" data-multiple="1" data-animation="am-flip-x" bs-options="icon.value as icon.label for icon in icons" bs-select>
+            Action <span class="caret"></span>
+        </button>
+    </div>
+
+</div>

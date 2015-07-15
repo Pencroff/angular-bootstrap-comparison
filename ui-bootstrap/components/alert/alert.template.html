@@ -1,0 +1,11 @@
+<div ng-controller="AlertCtrl as alertCtrl">
+    <div class="col-md-3">
+        <h3 id="alert">Alert</h3>
+        <p><a href="https://github.com/angular-ui/bootstrap/tree/master/src/alert">ui.bootstrap.alert</a></p>
+    </div>
+    <div class="col-md-9">
+        <alert ng-repeat="alert in alertCtrl.alerts" type="{{alert.type}}" close="alertCtrl.closeAlert($index)">{{alert.msg}}</alert>
+        <button class='btn btn-default' ng-click="alertCtrl.addAlert()">Add Alert</button>
+    </div>
+
+</div>

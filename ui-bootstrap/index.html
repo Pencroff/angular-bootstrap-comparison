@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ui bootstrap</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+
+    <script type="application/javascript" src="../bower_components/angular/angular.js"></script>
+    <!--<script type="application/javascript" src="../bower_components/angular-1-3/angular.js"></script>-->
+    <script type="application/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script type="application/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script type="application/javascript" src="app.js"></script>
+
+    <script type="application/javascript" src="components/accordion/accordion.controller.js"></script>
+    <script type="application/javascript" src="components/alert/alert.controller.js"></script>
+    <script type="application/javascript" src="components/button/button.controller.js"></script>
+    <script type="application/javascript" src="components/carousel/carousel.controller.js"></script>
+    <script type="application/javascript" src="components/collapse/collapse.controller.js"></script>
+    <script type="application/javascript" src="components/datepicker/datepicker.controller.js"></script>
+    <script type="application/javascript" src="components/dropdown/dropdown.controller.js"></script>
+    <script type="application/javascript" src="components/modal/modal.controller.js"></script>
+    <script type="application/javascript" src="components/pagination/pagination.controller.js"></script>
+    <script type="application/javascript" src="components/popover/popover.controller.js"></script>
+    <script type="application/javascript" src="components/progressbar/progressbar.controller.js"></script>
+    <script type="application/javascript" src="components/rating/rating.controller.js"></script>
+    <script type="application/javascript" src="components/tabs/tabs.controller.js"></script>
+    <script type="application/javascript" src="components/timepicker/timepicker.controller.js"></script>
+    <script type="application/javascript" src="components/tooltip/tooltip.controller.js"></script>
+    <script type="application/javascript" src="components/typeahead/typeahead.controller.js"></script>
+
+    <script type="application/javascript" src="components/scroll.controller.js"></script>
+</head>
+<body>
+<div class="container" ng-app="app" ng-strict-di>
+    <div class="row">
+        <div class="jumbotron">
+            <h1>Ui Bootstrap</h1>
+            <h4><a href="http://angular-ui.github.io/bootstrap/">Link</a></h4>
+        </div>
+    </div>
+    <div class="row">
+        <ng-include src="'components/accordion/accordion.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/alert/alert.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/button/button.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/carousel/carousel.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/collapse/collapse.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/datepicker/datepicker.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/dropdown/dropdown.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/modal/modal.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/pagination/pagination.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/popover/popover.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/progressbar/progressbar.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/rating/rating.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/tabs/tabs.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/timepicker/timepicker.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/tooltip/tooltip.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/typeahead/typeahead.template.html'"></ng-include>
+    </div>
+
+    <div ng-controller="ScrollController" style="height: 150px;"></div>
+</div>
+</body>
+</html>

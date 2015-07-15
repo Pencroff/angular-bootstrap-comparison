@@ -1,0 +1,21 @@
+<div ng-controller="NavbarCtrl">
+    <div class="col-md-3">
+        <h3 id="navbar">Navbar</h3>
+        <p><a href="http://mgcrea.github.io/angular-strap/#/navbars">mgcrea.ngStrap.navbar</a></p>
+        <p>could have conflict with <code style="display: inline-block">$locationProvider</code></p>
+    </div>
+    <div class="col-md-9">
+        <pre class="bs-example-scope">$location.path() = "{{$location.path()}}";</pre>
+        <nav class="navbar navbar-default" role="navigation" bs-navbar>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li data-match-route="navbar/$"><a href="#navbar/">Home</a></li>
+                <li data-match-route="navbar/page-one"><a href="#navbar/page-one">Page One</a></li>
+                <li data-match-route="navbar/page-two.*"><a href="#navbar/page-two/sub-a">Page Two</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>

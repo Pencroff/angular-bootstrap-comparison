@@ -1,0 +1,13 @@
+<div ng-controller="CollapseCtrl as collapseCtrl">
+    <div class="col-md-3">
+        <h3 id="collapse">Collapse</h3>
+        <p><a href="https://github.com/angular-ui/bootstrap/tree/master/src/collapse">ui.bootstrap.collapse</a></p>
+    </div>
+    <div class="col-md-9">
+        <button class="btn btn-default" ng-click="collapseCtrl.toggleCollapsed()">Toggle collapse</button>
+        <hr>
+        <div collapse="collapseCtrl.isCollapsed">
+            <div class="well well-lg">Some content</div>
+        </div>
+    </div>
+</div>
