@@ -5,15 +5,40 @@
     <title>Angular Strap</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/bootstrap.css">
+
+    <!--<script type="application/javascript" src="../bower_components/angular/angular.js"></script>-->
+    <script type="application/javascript" src="../bower_components/angular-1-3/angular.js"></script>
+    <script type="application/javascript" src="../bower_components/angular-strap/dist/angular-strap.js"></script>
+    <script type="application/javascript" src="../bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+    <script type="application/javascript" src="app.js"></script>
+
+    <script type="application/javascript" src="components/aside/aside.controller.js"></script>
+    <script type="application/javascript" src="components/navbar/navbar.controller.js"></script>
+    <script type="application/javascript" src="components/select/select.controller.js"></script>
+
+    <script type="application/javascript" src="components/scroll.controller.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" ng-app="app" ng-strict-di>
         <div class="row">
             <div class="jumbotron">
                 <h1>Angular Strap</h1>
                 <h4><a href="http://mgcrea.github.io/angular-strap/">Link</a></h4>
             </div>
         </div>
+        <!--<div class="row">-->
+            <!--<ng-include src="'components/aside/aside.template.html'"></ng-include>-->
+        <!--</div>-->
+        <!--<hr/>-->
+        <div class="row">
+            <ng-include src="'components/navbar/navbar.template.html'"></ng-include>
+        </div>
+        <hr/>
+        <div class="row">
+            <ng-include src="'components/select/select.template.html'"></ng-include>
+        </div>
+
+        <div ng-controller="ScrollController" style="height: 150px;"></div>
     </div>
 </body>
 </html>
