@@ -21,6 +21,14 @@
     <script type="application/javascript" src="components/datepicker/datepicker.controller.js"></script>
     <script type="application/javascript" src="components/dropdown/dropdown.controller.js"></script>
     <script type="application/javascript" src="components/modal/modal.controller.js"></script>
+    <script type="application/javascript" src="components/pagination/pagination.controller.js"></script>
+    <script type="application/javascript" src="components/popover/popover.controller.js"></script>
+    <script type="application/javascript" src="components/progressbar/progressbar.controller.js"></script>
+    <script type="application/javascript" src="components/rating/rating.controller.js"></script>
+    <script type="application/javascript" src="components/tabs/tabs.controller.js"></script>
+    <script type="application/javascript" src="components/timepicker/timepicker.controller.js"></script>
+    <script type="application/javascript" src="components/tooltip/tooltip.controller.js"></script>
+    <script type="application/javascript" src="components/typeahead/typeahead.controller.js"></script>
 
     <script type="application/javascript" src="components/scroll.controller.js"></script>
 </head>
@@ -63,7 +71,40 @@
     <div class="row">
         <ng-include src="'components/modal/modal.template.html'"></ng-include>
     </div>
-    <div ng-controller="ScrollController"></div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/pagination/pagination.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/popover/popover.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/progressbar/progressbar.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/rating/rating.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/tabs/tabs.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/timepicker/timepicker.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/tooltip/tooltip.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/typeahead/typeahead.template.html'"></ng-include>
+    </div>
+
+    <div ng-controller="ScrollController" style="height: 150px;"></div>
 </div>
 </body>
 </html>
