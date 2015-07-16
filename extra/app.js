@@ -6,6 +6,7 @@
 angular
     .module('app', [
         'ngSanitize',
+
         'ui.select',
 
         'ngTouch',
@@ -18,7 +19,9 @@ angular
         'ui.grid.moveColumns',
         'ui.grid.exporter',
         'ui.grid.importer',
-        'ui.grid.grouping'
+        'ui.grid.grouping',
+
+        'uiGmapgoogle-maps'
     ])
     .config(AppConfig);
 

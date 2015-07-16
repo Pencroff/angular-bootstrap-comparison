@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../bower_components/angular-ui-grid/ui-grid.css">
 
     <script type="application/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="application/javascript" src='../bower_components/lodash/lodash.js'></script>
     <!--<script type="application/javascript" src="../bower_components/angular-1-3/angular.js"></script>-->
     <script type="application/javascript" src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script type="application/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
@@ -21,11 +22,18 @@
 
     <script type="application/javascript" src="../bower_components/angular-ui-grid/ui-grid.js"></script>
 
+    <script src='//maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry,visualization'></script>
+    <script type="application/javascript" src='../bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
+
 
     <script type="application/javascript" src="app.js"></script>
 
     <script type="application/javascript" src="components/ui-select/ui-select.controller.js"></script>
     <script type="application/javascript" src="components/ui-grid/ui-grid.controller.js"></script>
+
+    <script type="application/javascript" src="assets/mocks/heat-layer.js"></script>
+
+    <script type="application/javascript" src="components/angular-google-maps/angular-google-maps.controller.js"></script>
 
     <script type="application/javascript" src="components/scroll.controller.js"></script>
 </head>
@@ -43,6 +51,10 @@
     <hr/>
     <div class="row">
         <ng-include src="'components/ui-grid/ui-grid.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/angular-google-maps/angular-google-maps.template.html'"></ng-include>
     </div>
 
     <div ng-controller="ScrollController" style="height: 150px;"></div>
