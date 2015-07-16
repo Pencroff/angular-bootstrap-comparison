@@ -83,7 +83,7 @@
             var sec = $interval(function () {
                 $scope.callsPending++;
 
-                $http.get('/data/500_complex.json')
+                $http.get('data/500_complex.json')
                     .success(function (data) {
                         $scope.callsPending--;
 
