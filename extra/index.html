@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/bootstrap.css">
     <link rel="stylesheet" href="../bower_components/angular-ui-select/dist/select.css">
     <link rel="stylesheet" href="../bower_components/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="../bower_components/fullcalendar/dist/fullcalendar.css">
 
     <script type="application/javascript" src="../bower_components/angular/angular.js"></script>
     <script type="application/javascript" src='../bower_components/lodash/lodash.js'></script>
@@ -25,14 +26,20 @@
     <script src='//maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry,visualization'></script>
     <script type="application/javascript" src='../bower_components/angular-google-maps/dist/angular-google-maps.js'></script>
 
+    <script type="application/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type="application/javascript" src="../bower_components/moment/moment.js"></script>
+    <script type="application/javascript" src="../bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <script type="application/javascript" src="../bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script type="application/javascript" src="../bower_components/fullcalendar/dist/gcal.js"></script>
+
 
     <script type="application/javascript" src="app.js"></script>
 
     <script type="application/javascript" src="components/ui-select/ui-select.controller.js"></script>
     <script type="application/javascript" src="components/ui-grid/ui-grid.controller.js"></script>
+    <script type="application/javascript" src="components/ui-calendar/ui-calendar.controller.js"></script>
 
     <script type="application/javascript" src="assets/mocks/heat-layer.js"></script>
-
     <script type="application/javascript" src="components/angular-google-maps/angular-google-maps.controller.js"></script>
 
     <script type="application/javascript" src="components/scroll.controller.js"></script>
@@ -51,6 +58,10 @@
     <hr/>
     <div class="row">
         <ng-include src="'components/ui-grid/ui-grid.template.html'"></ng-include>
+    </div>
+    <hr/>
+    <div class="row">
+        <ng-include src="'components/ui-calendar/ui-calendar.template.html'"></ng-include>
     </div>
     <hr/>
     <div class="row">

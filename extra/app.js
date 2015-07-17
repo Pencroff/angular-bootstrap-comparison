@@ -21,7 +21,9 @@ angular
         'ui.grid.importer',
         'ui.grid.grouping',
 
-        'uiGmapgoogle-maps'
+        'uiGmapgoogle-maps',
+
+        'ui.calendar'
     ])
     .config(AppConfig);
 

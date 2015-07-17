@@ -24,6 +24,7 @@
     "angular-touch": "~1.4.3",
     "angular-animate": "~1.4.3",
     "angular-google-maps": "~2.1.5",
-    "lodash": "~3.10.0"
+    "lodash": "~3.10.0",
+    "angular-ui-calendar": "~1.0.1"
   }
 }
